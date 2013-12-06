@@ -5,13 +5,19 @@
 <title>Mike Sinkula's First Web Page!</title>
 <style type="text/css" media="all">
 
+/* 
+Purple: http://slayeroffice.com/tools/color_palette/?hex=39275B
+Gold (Original) : http://slayeroffice.com/tools/color_palette/?hex=C79900
+Gold (Bright): http://slayeroffice.com/tools/color_palette/?hex=EBB700
+*/
+
 * { margin: 0; padding: 0; }
 
+html {
+	background-color: #39275B;
+	}
+
 body {
-	background-image: url(images/bg-960.png);
-	background-position: center;
-	background-repeat: repeat-y;
-	background-color:#FFFFFF;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #000000;
 	}
@@ -19,20 +25,23 @@ body {
 h1 {
 	font-size: 36px;
 	line-height: 36px;
+	color: #FFF;
 	}
 	
 h2 {
 	font-size: 24px;
 	line-height: 24px;
-	padding-top: 8px;
-	margin-bottom: 2px;
+	color: #39275B; /* purple */
+	/*padding-top: 8px;*/ 
+	margin-bottom: 10px; /* changed */
 	}
 	
 h3 {
 	font-size: 18px;
 	line-height: 18px;
-	padding-top: 8px;
-	margin-bottom: 2px;
+	color: #39275B; /* purple */
+	padding-top: 10px; /* changed */
+	margin-bottom: 4px; /* changed */
 	}
 	
 p {
@@ -49,22 +58,33 @@ ol, ul {
 	}
 	
 #header {
-	width: 940px;
+	width: 980px; /* change the width */
 	margin: 0 auto;
-	padding: 0 20px;
-	border: 1px solid black;
+	padding-top: 20px; /* change the padding */
+	/*border: 1px solid black;*/
 	}
+	
+	#header a {
+		color: #FFFFFF; /* white */
+		text-decoration: none; /* remove undeline */
+	}
+	
+	#header a:hover {
+		color: #C79900; /* gold */
+	}	
+	
 
 #navigation {
-	width: 940px;
+	width: 980px; /* change the width */
 	margin: 0 auto;
-	padding: 10px 20px; /* lets change this to 10px top/bottom and 20px left/right */
-	border: 1px solid black;
+	padding: 10px 0; /* lets change this to 10px top/bottom and 0px left/right */
+	/*border: 1px solid black;*/
+	color: #FFF; /* give all text elements a color of white */
 	}
 	
 	#navigation ul {
 		overflow: hidden; /* prevents the great collapse */
-		border: 1px solid grey;
+		/*border: 1px solid grey;*/
 		padding: 10px 0;
 		margin: 0; /* overwrites existing margins */
 	}
@@ -76,12 +96,33 @@ ol, ul {
 		margin-right: 20px; /* gives the items space between */
 	}
 	
+		#navigation ul li a {
+			color: #FFF; /* let's use white for the default link state */
+			text-decoration: none; /* this disables the default underline */
+		}
+		
+		#navigation ul li a:hover {
+			color: #EBB700; /* and use bright gold */
+		}
+	
 #content {
 	width: 940px;
+	/*background-image: url(images/bg-960.png);*/
+	background-position: center;
+	background-repeat: repeat-y;
+	background-color:#FFFFFF;
 	overflow: hidden; /* prevents the great collapse */
 	margin: 0 auto;
-	padding: 0 20px;
-	border: 1px solid black;
+	padding: 20px; /* change padding to 20px all around */
+	border-radius: 10px; /* adds rounded corners */
+	}
+	
+	#content a {
+		color: #39275B; /* purple */
+	}
+	
+	#content a:hover {
+		color: #C79900; /* gold */
 	}
 	
 	#text {
@@ -95,10 +136,19 @@ ol, ul {
 	}
 	
 #footer {
-	width: 940px;
+	width: 980px; /* change the width */
 	margin: 0 auto;
-	padding: 0 20px;
-	border: 1px solid black;
+	padding: 20px 0; /* change the padding */
+	/*border: 1px solid black;*/
+	color: #FFF; /* give all text elements a color of white */
+	}
+	
+	#footer a {
+		color: #FFFFFF; /* white */
+	}
+	
+	#footer a:hover {
+		color: #C79900; /* gold */
 	}
 
 	
@@ -108,7 +158,7 @@ ol, ul {
 
 <!-- Begin Header -->
 <div id="header">
-<h1>Mike Sinkula's First Web Page!</h1>
+<h1><a href="index.html">Mike Sinkula</a></h1>
 </div>
 <!-- End Header -->
 
@@ -140,8 +190,8 @@ ol, ul {
     <h3>Header Level 3</h3>
     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
     <ul>
-       <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-       <li>Aliquam tincidunt mauris eu risus.</li>
+       <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
+       <li><a href="#">Aliquam tincidunt mauris eu risus.</a></li>
     </ul>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
     </article>
@@ -151,9 +201,9 @@ ol, ul {
     <aside id="sidebar">
     <h2>Headline</h2>
     <ul>
-    <li>Lorem ipsum dolor</li>
-    <li>Aliquam tincidunt</li>
-    <li>Vestibulum auctor</li>
+    <li><a href="#">Lorem ipsum dolor</a></li>
+    <li><a href="#">Aliquam tincidunt</a></li>
+    <li><a href="#">Vestibulum auctor</a></li>
     </ul>
     <aside>
     <!-- End Sidebar -->
@@ -163,7 +213,7 @@ ol, ul {
 
 <!-- Begin Footer -->
 <div id="footer">
-<p>&copy;2014 Mike Sinkula. All rights reserved.</p>
+<p>&copy;2014 <a href="http://www.mikesinkula.com/">Mike Sinkula</a>. All rights reserved.</p>
 </div>
 <!-- End Footer -->
 
