@@ -111,6 +111,10 @@ ol, ul {
 		#navigation ul li a:hover {
 			color: #EBB700; /* and use bright gold */
 		}
+		
+		#navigation ul li.current a {
+			color: #EBB700; /* and use bright gold */
+		}
 	
 #content {
 	width: 940px;
