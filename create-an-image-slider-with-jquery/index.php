@@ -6,7 +6,6 @@
         <li><img src="images/img-slide-01.jpg" width="940" height="400" alt="Image One"></li>
         <li><img src="images/img-slide-02.jpg" width="940" height="400" alt="Image Two"></li>
         <li><img src="images/img-slide-03.jpg" width="940" height="400" alt="Image Three"></li>
-        
         </ul>
     </div>
     <!-- End Flex Slider -->
