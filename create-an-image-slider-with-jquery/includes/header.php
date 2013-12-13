@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Mike Sinkula's First Web Site!</title>
+<title>Mike Sinkula</title>
 
 <!-- Begin Styles -->
 <link rel="stylesheet" href="styles.css" type="text/css" media="all" />
