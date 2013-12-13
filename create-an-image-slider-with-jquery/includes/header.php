@@ -2,11 +2,26 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Mike Sinkula's First Web Page!</title>
+<title>Mike Sinkula's First Web Site!</title>
 
 <!-- Begin Styles -->
-<link href="styles.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="styles.css" type="text/css" media="all" />
+<link rel="stylesheet" href="flexslider.css" type="text/css">
 <!-- End Styles -->
+
+<!-- Begin Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="scripts/jquery.flexslider.js"></script>
+<!-- End Scripts -->
+
+<!-- Begin Flex Slider -->
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
+<!-- End Flex Slider -->
+
 
 </head>
 <body>

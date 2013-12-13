@@ -136,6 +136,20 @@ ol, ul {
 		color: #C79900; /* gold */
 	}
 	
+	#widgets {
+		overflow: hidden;
+	}
+	
+	#widgets section.widget-item {
+		width: 300px;
+		float: left;
+		margin-right: 20px;
+	}
+	
+	#widgets section.widget-item:last-child {
+		margin-right: 0px;
+	}
+	
 	#text {
 		width: 620px;
 		float: left;

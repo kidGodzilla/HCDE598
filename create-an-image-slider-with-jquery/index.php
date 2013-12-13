@@ -1,36 +1,38 @@
 <?php include('includes/header.php'); ?>
 
-    <!-- Begin Text -->
-    <article id="text">
-    <h2>Welcome to my Website!</h2>  
-    <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo.</p>
-    <p>Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-    <h3>Header Level 3</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>   
-    <ol>
-       <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-       <li>Aliquam tincidunt mauris eu risus.</li>
-    </ol>
-    <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
-    <h3>Header Level 3</h3>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-    <ul>
-       <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></li>
-       <li><a href="#">Aliquam tincidunt mauris eu risus.</a></li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
-    </article>
-    <!-- End Text -->
+  <!-- Begin Flex Slider -->
+    <div class="flexslider">
+        <ul class="slides">
+        <li><img src="images/img-slide-01.jpg" width="940" height="400" alt="Image One"></li>
+        <li><img src="images/img-slide-02.jpg" width="940" height="400" alt="Image Two"></li>
+        <li><img src="images/img-slide-03.jpg" width="940" height="400" alt="Image Three"></li>
+        
+        </ul>
+    </div>
+    <!-- End Flex Slider -->
     
-    <!-- Begin Sidebar -->
-    <aside id="sidebar">
-    <h2>Home</h2>
-    <ul>
-    <li><a href="#">Lorem ipsum dolor</a></li>
-    <li><a href="#">Aliquam tincidunt</a></li>
-    <li><a href="#">Vestibulum auctor</a></li>
-    </ul>
-    <aside>
-    <!-- End Sidebar -->
+    <!-- Begin Widgets -->
+    <div id="widgets">
+        <section class="widget-item">
+            <h2>About Me</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet.</p>
+        </section>
+        <section class="widget-item">
+            <h2>Services</h2>
+            <p>Lorem ipsum dolor sit amet:</p>
+            <ul>
+            <li>Lorem ipsum dolor</li>
+            <li>Aliquam tincidunt</li>
+            <li>Vestibulum auctor</li>
+            <li>Pellentesque habitant</li>
+            </ul>
+        </section>
+        <section class="widget-item">
+            <h2>Contact Me</h2>
+            <p><strong>Phone: </strong>206.543.2567<br><strong>Email: </strong><a href="mailto:sinkum@uw.edu">sinkum@uw.edu</a></p>
+            <p>428 Sieg Hall<br>University of Washington<br>Seattle, WA 98195</p> 
+        </section>
+    </div>
+    <!-- End Widgets -->
     
 <?php include('includes/footer.php'); ?>
