@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <title>Mike Sinkula</title>
 
+<!-- Begin Meta -->
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
+<!-- End Meta -->
+
 <!-- Begin Styles -->
 <link rel="stylesheet" href="styles.css" type="text/css" media="all" />
 <link rel="stylesheet" href="flexslider.css" type="text/css">
@@ -21,7 +25,6 @@
   });
 </script>
 <!-- End Flex Slider -->
-
 
 </head>
 <body>
