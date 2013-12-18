@@ -65,8 +65,13 @@ ol, ul {
 	margin-bottom: 10px;
 	}
 	
+img {
+	max-width: 100%;
+	height: auto;
+	}
+	
 #header {
-	width: 980px; /* change the width */
+	max-width: 980px; /* change to a max-width */
 	margin: 0 auto;
 	padding-top: 20px; /* change the padding */
 	/*border: 1px solid black;*/
@@ -83,7 +88,7 @@ ol, ul {
 	
 
 #navigation {
-	width: 980px; /* change the width */
+	max-width: 980px; /* change to a max-width */
 	margin: 0 auto;
 	padding: 10px 0; /* lets change this to 10px top/bottom and 0px left/right */
 	/*border: 1px solid black;*/
@@ -118,7 +123,7 @@ ol, ul {
 		}
 	
 #content {
-	width: 940px;
+	max-width: 940px; /* change to a max-width */
 	/*background-image: url(images/bg-960.png);*/
 	background-position: center;
 	background-repeat: repeat-y;
@@ -186,7 +191,7 @@ ol, ul {
 	}
 	
 #footer {
-	width: 980px; /* change the width */
+	max-width: 980px; /* change to a max-width */
 	margin: 0 auto;
 	padding: 20px 0; /* change the padding */
 	/*border: 1px solid black;*/
@@ -200,5 +205,93 @@ ol, ul {
 	#footer a:hover {
 		color: #C79900; /* gold */
 	}
+	
+/* Desktop Screen Set to 1024px or Below */
+@media screen and (max-width: 1024px) {
+	
+	#content {
+		padding: 20px 02.04%; /* 20px / 980px */
+	}
+	
+	#text {
+		width: 65.95%; /* 620px / 940px */
+	}
+	
+	#sidebar {
+		width: 31.91%; /* 300px / 940px */
+	}
+	
+	#widgets section.widget-item {
+		width: 31.91%; /* 300px / 940px */
+		margin-right: 02.12%; /* 20px / 940px */
+	}
+	
+}
+
+/* Mobile Screen Set to 768px or Below  */
+@media screen and (max-width: 768px) {
+	
+	#header {
+		padding-left: 02.04%; /* 20px / 980px */
+		padding-right: 02.04%;
+	}
+	
+	#navigation {
+		padding-left: 02.04%;
+		padding-right: 02.04%;
+	}
+	
+	#content {
+		border-radius: 0px; /* removes rounded corners */
+	}
+	
+	#footer {
+		padding-left: 02.04%;
+		padding-right: 02.04%;
+	}
+	
+}
+
+/* Mobile Screen Set to 600px or Below  */
+@media screen and (max-width: 600px) {
+	
+	
+	#header {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	#navigation {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	#content {
+		padding: 20px 10px;
+	}
+	
+	#text {
+		width: 100%;
+		float: none;
+	}
+	
+	#sidebar {
+		width: 100%;
+		float: none; 
+	}
+	
+	#widgets section.widget-item {
+		width: 100%;
+		float: none;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	
+	#footer {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+}
 
 	
