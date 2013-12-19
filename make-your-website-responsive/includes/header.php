@@ -20,18 +20,29 @@
 
 <!-- Begin Flex Slider -->
 <script type="text/javascript" charset="utf-8">
-  $(window).load(function() {
-    $('.flexslider').flexslider();
+  $(window).load(function() { // enable function upon window load
+    $('.flexslider').flexslider(); // call flexslider function
   });
 </script>
 <!-- End Flex Slider -->
+
+<!-- Begin Toggle Menu -->
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() { // enable function upon window load
+	$("#toggle").click(function() { // when toggle is clicked...
+		$("#navigation").toggle(); // ... open or close the navigation
+	});
+  });
+</script>
+<!-- End Toggle Menu -->
 
 </head>
 <body>
 
 <!-- Begin Header -->
 <div id="header">
-<h1><a href="index.php">Mike Sinkula</a></h1>
+<h1 id="logo"><a href="index.php">Mike Sinkula</a></h1>
+<img id="toggle" src="images/img-toggle.png" width="25" height="25" alt="Toggle Menu">
 </div>
 <!-- End Header -->
 
