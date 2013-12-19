@@ -213,6 +213,8 @@ img {
 /* Desktop Screen Set to 1024px or Below */
 @media screen and (max-width: 1024px) {
 	
+	html { -webkit-text-size-adjust: none; }
+	
 	#content {
 		padding: 20px 02.04%; /* 20px / 980px */
 	}
@@ -259,7 +261,6 @@ img {
 /* Mobile Screen Set to 600px or Below  */
 @media screen and (max-width: 600px) {
 	
-	
 	#header {
 		padding-left: 10px;
 		padding-right: 10px;
@@ -274,7 +275,7 @@ img {
 	#toggle {
 		display: block; /* make our toggle visible */
 		float: right; /* float our toggle right */
-		padding-top: 7px;
+		padding-top: 7px; /* move this into place */
 	}
 	
 	#navigation {
@@ -295,7 +296,7 @@ img {
 	}
 	
 	#navigation ul li a {
-		display: block;
+		display: block; /* makes the anchor tag extend out */
 	}
 	
 	#content {
