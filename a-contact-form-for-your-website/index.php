@@ -29,8 +29,8 @@
     <li><a href="#">Lorem ipsum dolor</a></li>
     <li><a href="#">Aliquam tincidunt</a></li>
     <li><a href="#">Vestibulum auctor</a></li>
-    </ul>
-    <aside>
+    </ul>    
+    </aside>
     <!-- End Sidebar -->
     
 <?php include('includes/footer.php'); ?>

@@ -34,7 +34,7 @@
     <label for="subject">Subject:</label>
     <select name="subject">
       <option value="General Inquiry" selected="selected">General Inquiry</option>
-      <option value="Specific Inquiry">Specific Inquiry</option>
+      <option value="Specific Inquiry">X</option>
       <option value="Stoopid Inquiry">Stoopid Inquiry</option>
     </select>
     <label for="message">Message:</label>
@@ -53,8 +53,7 @@
     <li><a href="#">Lorem ipsum dolor</a></li>
     <li><a href="#">Aliquam tincidunt</a></li>
     <li><a href="#">Vestibulum auctor</a></li>
-    </ul>
-    <aside>
+    </ul>    </aside>
     <!-- End Sidebar -->
     
 <?php include('includes/footer.php'); ?>

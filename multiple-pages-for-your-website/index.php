@@ -30,7 +30,7 @@
     <li><a href="#">Aliquam tincidunt</a></li>
     <li><a href="#">Vestibulum auctor</a></li>
     </ul>
-    <aside>
+    </aside>
     <!-- End Sidebar -->
     
 <?php include('includes/footer.php'); ?>
