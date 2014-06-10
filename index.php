@@ -1,6 +1,6 @@
 <?php include('includes/header.php');  ?>
     
-    <!-- Begin Flexslider (Testies more) -->
+    <!-- Begin Flexslider -->
     <div class="flexslider">
     <ul class="slides">
         <li><img src="images/img-slide-01.jpg" alt="Image One"></li>
